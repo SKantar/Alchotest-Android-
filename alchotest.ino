@@ -35,7 +35,7 @@ float get_R0() {
   	sensor_volt = sensorValue / 1024 * 5.0;
   	RS_air = (5.0 - sensor_volt) / sensor_volt;		// omit * RL
   	R0 = RS_air / 70.0;								// The ratio of RS/R0 is 70 in a clear air
-  
+  void loop()
   	return R0;
 }
 
@@ -127,5 +127,5 @@ void loop() {
   	BTserial.print(get_BAC((float)min_ratio));
   	BTserial.print(";");
 
-  	delay(1000);
+  	delay(10000);
 }
