@@ -121,8 +121,8 @@ void loop() {
 	digitalWrite(DOUTled, LOW);
         
         
-        // BTserial.print((float)min_ratio);
-        // BTserial.print(",");
+        BTserial.print((float)min_ratio);
+        BTserial.print(",");
   	BTserial.print(get_BAC((float)min_ratio));
   	BTserial.print(";");
 
