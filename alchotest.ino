@@ -26,6 +26,7 @@ float get_R0() {
   	/*--- Get a average data by testing 100 times  ---*/
   	for(int x = 0; x < 100; x++){
   		sensorValue = sensorValue + analogRead(AOUTalcho);
+		delay(10);
   	}
   	sensorValue = sensorValue / 100.0;
   	/*-----------------------------------------------*/
